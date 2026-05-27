@@ -1,20 +1,16 @@
-import java.util.*;
 
-public class ContainsDuplicateBrute {
+public class ContainsDuplicate {
     public static void main(String[] args) {
-
         int[] nums = {1, 2, 3, 1};
-        HashSet<Integer> set = new HashSet<>();
+        boolean isDuplicate = false;
 
-        for(int num : nums){
-            if(!set.add(num)){
-            //  ↑
-            // add() returns false → duplicate!
-            // ! flips false to true → enters if block
-                System.out.println("true");
-                return;
+        for(int i = 0; i < nums.length; i++){
+            for(int j = i+1; j < nums.length; j++){
+                if(nums[i] == nums[j]){
+                    isDuplicate = true;
+                }
             }
         }
-        System.out.println("false");
+        System.out.println(isDuplicate);
     }
 }
