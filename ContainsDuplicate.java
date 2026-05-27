@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ContainsDuplicateBrute {
+public class ContainsDuplicate {
     public static void main(String[] args) {
 
         int[] nums = {1, 2, 3, 1};
