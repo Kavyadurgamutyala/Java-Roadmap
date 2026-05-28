@@ -1,3 +1,4 @@
+package Day02;
 
 public class ContainsDuplicateBrute {
     public static void main(String[] args) {

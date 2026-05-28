@@ -1,3 +1,4 @@
+package Day02;
 public class MathUtils {
 
     static int add(int a, int b){
